@@ -9,9 +9,9 @@ if (!defined("WHMCS")) {
 function cookie_banner_config() {
     return [
         'name' => 'Custom Cookie Banner',
-        'description' => 'An addon to display a custom cookie banner with customizable styling, positioning, and animations.',
-        'version' => '1.4',
-        'author' => 'Your Name',
+        'description' => 'An addon to display a custom cookie banner.',
+        'version' => '1.0',
+        'author' => 'Mytihost.uk',
         'fields' => [] // Settings are handled in the admin UI
     ];
 }
@@ -36,7 +36,7 @@ function cookie_banner_activate() {
 
     return [
         'status' => 'success',
-        'description' => 'The cookie banner module has been activated with customizable styling, positioning, and animations.',
+        'description' => 'The cookie banner module has been activated.',
     ];
 }
 
@@ -109,7 +109,7 @@ function cookie_banner_output($vars) {
         <!-- Banner Message (Replaced with textarea) -->
         <div class="form-group">
             <label for="message">Banner Message</label>
-            <textarea id="message" name="message" class="form-control" style="width: 50%;" rows="6">{$message}</textarea>
+            <textarea id="message" name="message" class="form-control" style="width: 50%;" rows="4">{$message}</textarea>
         </div>
         <!-- Accept Button Text -->
         <div class="form-group">
